@@ -29,7 +29,7 @@ def webhook():
         reply_text = response.text
 
         # 2. Gửi phản hồi lại cho người dùng Zalo
-        zalo_api_url = "https://bot-api.zaloplatforms.com/bot{1726766149999057268:zYxabjPVSkmMnUjFMAxnoTGEyGoHQCfRSixMOGwfuthzZqyXqOxDxlRwNMWzUdIq}/sendMessage"
+        zalo_api_url = "https://bot-api.zaloplatforms.com/bot1726766149999057268:zYxabjPVSkmMnUjFMAxnoTGEyGoHQCfRSixMOGwfuthzZqyXqOxDxlRwNMWzUdIq/sendMessage"
         headers = {
             "access_token": BOT_TOKEN,
             "Content-Type": "application/json",
