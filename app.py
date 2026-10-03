@@ -14,6 +14,7 @@ client = genai.Client(api_key=GEMINI_API_KEY)
 @app.route("/webhook", methods=["POST"])
 def webhook():
     data = request.json
+    print(data)
 
     # Trích xuất nội dung tin nhắn và ID người gửi từ Zalo
     message_text = data.get("message", {}).get("text", "")
