@@ -5,7 +5,7 @@ from google import genai
 app = Flask(__name__)
 
 # Điền các mã của bạn vào đây
-GEMINI_API_KEY = "AQ.Ab8RN6IqUUCY0Kl4XfbU3bR2hZCQ6PBCMf5ck2qHuFbUPZ1v9g"
+GEMINI_API_KEY = "AQ.Ab8RN6KW0YOvkIZ08pb1QH7Gnsl1M1nbTWA0vaWFs1cSdCTLSQ"
 BOT_TOKEN = "1726766149999057268:zYxabjPVSkmMnUjFMAxnoTGEyGoHQCfRSixMOGwfuthzZqyXqOxDxlRwNMWzUdIq"
 
 client = genai.Client(api_key=GEMINI_API_KEY)
