@@ -6,7 +6,7 @@ app = Flask(__name__)
 
 # Điền các mã của bạn vào đây
 GEMINI_API_KEY = "AQ.Ab8RN6IqUUCY0Kl4XfbU3bR2hZCQ6PBCMf5ck2qHuFbUPZ1v9g"
-BOT_TOKEN = "1726766149999057268:qfBeAHYuuqJqhgNHiOHbZKvCWfdzzQVhhurXWtCMgPBACXqGohAFHskNbQNWBUsZ"
+BOT_TOKEN = "1726766149999057268:zYxabjPVSkmMnUjFMAxnoTGEyGoHQCfRSixMOGwfuthzZqyXqOxDxlRwNMWzUdIq"
 
 client = genai.Client(api_key=GEMINI_API_KEY)
 
@@ -29,7 +29,7 @@ def webhook():
         reply_text = response.text
 
         # 2. Gửi phản hồi lại cho người dùng Zalo
-        zalo_api_url = "https://openapi.zalo.me/v2.0/oa/message"
+        zalo_api_url = "https://bot-api.zaloplatforms.com/bot{1726766149999057268:zYxabjPVSkmMnUjFMAxnoTGEyGoHQCfRSixMOGwfuthzZqyXqOxDxlRwNMWzUdIq}/sendMessage"
         headers = {
             "access_token": BOT_TOKEN,
             "Content-Type": "application/json",
